@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Lista de Tareas</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <main class="contenedor">
+    <h1>Mi Lista de Tareas</h1>
+    <p>Organiza tus actividades fácilmente.</p>
+
+    <form id="taskForm">
+      <input
+        type="text"
+        id="taskInput"
+        placeholder="Escribe una tarea..."
+        maxlength="100"
+        required
+      >
+      <button type="submit">Agregar</button>
+    </form>
+
+    <p id="message" role="status"></p>
+    <ul id="taskList"></ul>
+    <p id="emptyMessage">No tienes tareas todavía.</p>
+  </main>
+</body>
+</html>

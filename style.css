@@ -1,0 +1,109 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 30px 15px;
+  font-family: Arial, sans-serif;
+  background: #f4f1ed;
+  color: #292929;
+}
+
+.contenedor {
+  max-width: 550px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px #00000012;
+}
+
+h1 {
+  text-align: center;
+  color: #a8324a;
+}
+
+.contenedor > p {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #a8324a;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0;
+  padding: 12px;
+  background: #f8f6f4;
+  border-radius: 6px;
+}
+
+li span {
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+
+li.completada span {
+  text-decoration: line-through;
+  color: #777;
+}
+
+li button {
+  padding: 8px;
+  font-size: 12px;
+}
+
+#message {
+  color: #a8324a;
+  font-size: 14px;
+}
+
+@media (max-width: 450px) {
+  .contenedor {
+    padding: 18px;
+  }
+
+  form {
+    flex-wrap: wrap;
+  }
+
+  form button {
+    width: 100%;
+  }
+
+  li {
+    flex-wrap: wrap;
+  }
+}
